@@ -1,0 +1,280 @@
+:root {
+    --linkcolor: black;
+    --linkhovercolor: rgba(221, 245, 248);
+    --titlecolor: black; 
+    --subtitlecolor:black;
+    --backgroundcolor: rgb(221, 245, 248);
+    --textcolor: black;
+    --footercolor: black;
+    --linkvisited: rgba(221, 245, 248);
+}
+* {
+    margin:0;
+    padding:0;
+    text-align: center;
+    scroll-behavior: smooth;
+    /* overflow: hidden; locks scrolling */
+}
+body {
+    background-color: var(--backgroundcolor);
+    z-index: 0;
+}
+
+h2.heading {
+    font-family: 'Lucida Handwriting', cursive;
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+p.text {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+.front {
+    margin-left: auto;
+    margin-right: auto;
+    height:100vh;
+    background-image: url(./media/queens.jpeg);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    z-index: 1;
+    /* filter: drop-shadow(0 4px 10px black); */
+    
+}
+
+.front2 {
+    margin-left: auto;
+    margin-right: auto;
+    /* height:100vh; */
+    /* background-image: url(./media/queens.jpeg); */
+    background-image: url(./media/flags.jpeg);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    z-index: 1;
+    /* filter: drop-shadow(0 4px 10px black); */
+}
+
+.front3 {
+    margin-left: auto;
+    margin-right: auto;
+    /* height:100vh; */
+    /* background-image: url(./media/queens.jpeg); */
+    background-image: url(./media/nature.jpeg);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    z-index: 1;
+    /* filter: drop-shadow(0 4px 10px black); */
+}
+
+.front4 {
+    margin-left: auto;
+    margin-right: auto;
+    /* height:100vh; */
+    /* background-image: url(./media/queens.jpeg); */
+    background-image: url(./media/tourism.jpeg);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.front5 {
+    margin-left: auto;
+    margin-right: auto;
+    /* height:100vh; */
+    /* background-image: url(./media/queens.jpeg); */
+    background-image: url(./media/stadium.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.front6 {
+    margin-left: auto;
+    margin-right: auto;
+    /* height:100vh; */
+    /* background-image: url(./media/queens.jpeg); */
+    background-image: url(./media/food.jpeg);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.front7 {
+    margin-left: auto;
+    margin-right: auto;
+    /* height:100vh; */
+    /* background-image: url(./media/queens.jpeg); */
+    background-image: url(./media/about.jpeg);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.about>* {
+    margin: 5em;
+}
+
+.title {
+    font-size: 5em;
+    margin-top:13vh;
+    text-transform: uppercase;
+    line-height: 1em;
+    color: black;
+}
+.title h2 {
+    color:var(--titlecolor);
+    font-family: 'Gaegu', cursive;
+    letter-spacing: 0.2em;
+    color: black;
+}
+.title p {
+    font-family: 'Times New Roman', cursive;
+    font-size: 0.9em;
+    letter-spacing: 5px;
+    line-height: 1em;
+    /* color: var(--subtitlecolor); */
+    color: black;
+}
+p.scroll {
+    font-size: 0.34em;
+    letter-spacing: 0;
+    color: var(--linkcolor);
+}
+span.scroll {
+    font-size: 0.7em;
+}
+a.scroll {
+    color: var(--linkcolor);
+    text-decoration: none;
+}
+a.scroll:visited {
+    color: var(--linkvisited);
+    text-decoration: none;
+}
+a.scroll:hover {
+    color: var(--linkhovercolor);
+    text-decoration: none;
+}
+
+nav {
+    height:20vh;
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+nav button {
+    border:0;
+    background-color: rgba(255, 255, 255, 0);
+    color:var(--linkcolor);
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', 'Open Sans', sans-serif;
+}
+nav button:first-child {
+    margin-left: 4em;
+}
+nav button:last-child {
+    margin-right: 4em;
+}
+nav a {
+    color:var(--linkcolor);
+    font-weight: bold;
+    text-decoration: none;
+}
+nav a:visited {
+    color:var(--linkcolor);
+    font-weight: bold;
+    text-decoration: none;
+}
+nav button:hover {
+    color:var(--linkhovercolor);
+}
+nav a:hover {
+    color:var(--linkhovercolor);
+}
+
+.container2 {
+    display:flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 6em 4em;
+}
+d.container2 > div {
+    width: 50%;
+}
+.container2 .wordbox {
+    margin: 2em 1em 0 0;
+    padding-right: 0.6em;
+}
+.container2 .wordbox h2 {
+    text-align: left;
+    font-size: 3em;
+    color: var(--titlecolor);
+    border-radius: 10px;
+}
+.container2 .wordbox p{
+    font-size: 0.94em;
+    letter-spacing: 0.1em;
+    text-align: left;
+    padding-right: 1em;
+    margin-top:1em;
+    line-height: 1.75em;
+    color: var(--textcolor);
+}
+.container2 .map {
+    border:1px solid var(--linkcolor);
+    border-radius: 10px;
+    filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.664));
+    width: 600px;
+    height: 450px;
+}
+
+.container2 img {
+    width: 600px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.caption {
+    color:black;
+    background-color: white;
+    position: relative;
+    height: 1em;
+    top: -2em;
+    padding: 0.5em 0;
+    border-radius: 0 0 10px 10px;
+    font-family: 'Gaegu', 'Open Sans', sans-serif;
+}
+
+footer {
+    height: 4em;
+    padding: 1em;
+    margin-top: 10em;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+footer a {
+    text-decoration: none;
+    color: var(--footercolor);
+    font-family: 'Gaegu', 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    margin: 0 2em;
+    letter-spacing: 0.3em;
+}
+footer a:hover {
+    text-decoration: none;
+    color: var(--titlecolor);
+}
+footer a:visited {
+    text-decoration: none;
+    color: var(--titlecolor);
+}
